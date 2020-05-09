@@ -1,15 +1,16 @@
 # quickstart-mongodb
 ## MongoDB on the AWS Cloud
 
-This Quick Start sets up a flexible, scalable AWS environment for MongoDB, and launches MongoDB into a configuration of your choice.
+This Quick Start sets up a flexible, scalable AWS environment for MongoDB, and launches MongoDB into a configuration of your choice. The is for CHINA VERSION
 
 MongoDB is an open source, NoSQL database that provides support for JSON-styled, document-oriented storage systems. 
 Its flexible data model enables you to store data of any structure, and it provides full index support, sharding, and replication.
 
 The Quick Start offers two deployment options:
 
-- Deploying MongoDB into a new virtual private cloud (VPC) on AWS
-- Deploying MongoDB into an existing VPC on AWS
+- [Deploying MongoDB into a new virtual private cloud (VPC) on AWS](https://cf-templates-1hc09qho4b94m-cn-north-1.s3.cn-north-1.amazonaws.com.cn/quickstart-mongodb/templates/mongodb-master.template)
+- [Deploying MongoDB into an existing VPC on AWS](https://cf-templates-1hc09qho4b94m-cn-north-1.s3.cn-north-1.amazonaws.com.cn/quickstart-mongodb/templates/mongodb.template) 
+
 
 You can also use the AWS CloudFormation templates as a starting point for your own implementation.
 
