@@ -499,7 +499,11 @@
                                 {
                                     "Ref": "QSS3KeyPrefix"
                                 },
-                                "scripts/orchestrator.sh orchestrator.sh --region cn-north-1\n",
+                                "scripts/orchestrator.sh orchestrator.sh --region ",
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "\n",
                                 "chmod +x orchestrator.sh \n",
                                 "aws s3 cp s3://",
                                 {
@@ -509,7 +513,11 @@
                                 {
                                     "Ref": "QSS3KeyPrefix"
                                 },
-                                "scripts/disable-transparent-hugepages /etc/init.d/disable-transparent-hugepages --region cn-north-1\n",
+                                "scripts/disable-transparent-hugepages /etc/init.d/disable-transparent-hugepages --region ",
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "\n",
                                 "chmod +x /etc/init.d/disable-transparent-hugepages \n",
                                 "chkconfig --add disable-transparent-hugepages \n",
                                 "aws s3 cp s3://",
@@ -520,7 +528,11 @@
                                 {
                                     "Ref": "QSS3KeyPrefix"
                                 },
-                                "scripts/init_replica.sh init.sh --region cn-north-1\n",
+                                "scripts/init_replica.sh init.sh --region ",
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "\n",
                                 "aws s3 cp s3://",
                                 {
                                     "Fn::If": ["UsingDefaultBucket",  { "Fn::Sub": "${QSS3BucketName}-${AWS::Region}" }, {"Ref": "QSS3BucketName"}]
@@ -529,7 +541,11 @@
                                 {
                                     "Ref": "QSS3KeyPrefix"
                                 },
-                                "scripts/signalFinalStatus.sh signalFinalStatus.sh --region cn-north-1\n",
+                                "scripts/signalFinalStatus.sh signalFinalStatus.sh --region ",
+                                {
+                                    "Ref": "AWS::Region"
+                                },
+                                "\n",
                                 "chmod +x signalFinalStatus.sh \n",
                                 "chmod +x init.sh \n",
                                 "#  Run the install \n",
